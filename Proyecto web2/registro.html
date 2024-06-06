@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleregistro.css">
+
+    <title>Document</title>
+
+     <h1   style="color:rgb(190, 166, 85);text-align: center;"> ProyectoMadera </h1>
+  
+</header>	
+<nav class="menunav" >  
+    <div class="logo"></div>
+    <a class="btn">
+    <span></span>
+     <span></span>
+     <span></span>
+     </a>
+     <h1 class="titulo"  >MARA BOLIVIA</h1>
+ 
+   
+        <ul class="menuul">
+            <li style="--crl:#000ade1">
+                <a href="prin.html" data-text="&nbsp;INICIO">&nbsp;INICIO&nbsp;</a>
+            </li>
+            <li style="--crl:#000ade1">
+                <a href="tablas.html" data-text="&nbsp;TABLAS">&nbsp;TABLAS&nbsp;</a>
+            </li>
+            <li style="--crl:#000ade1">
+                <a href="muebles.html" data-text="&nbsp;MUEBLES">&nbsp;MUEBLES &nbsp;</a>
+            </li>
+            <li style="--crl:#000ade1">
+                <a href="puerta.html" data-text="&nbsp;PUERTAS">&nbsp;PUERTAS &nbsp;</a>
+            </li>
+            <li style="--crl:#000ade1">
+                <a href="nosotros.html" data-text="&nbsp;NOSOTROS">&nbsp;NOSOTROS &nbsp;</a>
+            </li>
+            <li style="--crl:#000ade1">
+                <a href="registro.html" data-text="&nbsp;">&nbsp;REGISTRATE &nbsp;</a>
+          </li>
+        
+        </ul> 
+</nav>
+<!--registro --> 
+<br>
+<br>
+
+<body>
+    <div class="container">
+        <h1>¿Querés más información?</h1>
+        <form id="contact-form">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="ciudad">Ciudad</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+
+            <label for="provincia">Provincia</label>
+            <input type="text" id="provincia" name="provincia" required>
+
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="celular">Número de Celular</label>
+            <input type="tel" id="celular" name="celular" required>
+
+           
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            // Aquí puedes agregar la lógica para enviar el formulario por JavaScript
+            console.log('Formulario enviado');
+        });
+    </script>
+</body>
+
+<body>
+
+    
+      
+     
+</body>
+<body>
+    <footer class="f1">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/MarcosBenjaminCruz?locale=es_LA"><img src="img/logos/face.png" alt="Facebook" style="width: 40px; height: 40px;"></a>
+        <a href="https://www.instagram.com/deadrosebl4ck/"><img src="img/logos/instagram.jpeg" alt="Instagram" style="width: 40px; height: 40px;" ></a>
+        <a href="https://www.tiktok.com/@dead_rose_black"><img src="img/logos/tiktok.png" alt="Twitter" style="width: 40px; height: 40px;" ></a>
+        <a href="https://web.whatsapp.com/"><img src="img/logos/watsap.jpeg" alt="LinkedIn" style="width: 40px; height: 40px;" ></a>
+        <a href="https://www.youtube.com/channel/UCBJ8XN-5NKeafq2YGvAaZPw"><img src="img/logos/youtube.jpg" alt="YouTube" style="width: 40px; height: 40px;" ></a>
+        <!-- Agrega más íconos de redes sociales si es necesario -->
+      </div>
+      <p>&copy; 2024 Mi Empresa Marc-Osiel. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+body {
+
+  background-image: url("../img/fondoB.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+ 
+}
+
+ /*MENU */
+ .menunav {
+  position: fixed;
+        /* posicion fija*/
+        height: 80px;
+        /* altura definida */
+        overflow: hidden;
+        /*top 0 no estoy copiando*/
+        top: 0;
+        display: flex;
+        align-items: center;
+        /*top 0 no estoy copiando*/
+        background: #302e2ee6;
+        width: 100%;
+        gap: 30px;
+        
+}
+header   {
+  display: flex;
+  width: 80%;
+  height: 10vh;
+  margin: auto;
+  align-items: center;
+  font-family: Monaco;
+}
+.logo {
+  background: url(../img/logo.jpg)no-repeat 80% 80%;
+  background-size: contain;
+  width: 200px;
+  height: 65px;
+  float: left;
+}
+.menu{
+  position: absolute;
+  right: 50px;
+}
+.titulo{
+  margin: 0; 
+  color:rgb(190, 166, 85);
+}
+.menuul{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+ }
+ .menuul li{
+  position: relative;
+  list-style: none;
+}
+.menuul li a {
+  position: relative;
+  font-size: 1em;
+  text-decoration: none;
+  line-height: 1em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: transparent;
+ /* border-right: 8px solid var(--crl);
+  -webkit-text-stroke: 1px var(--crl);*/
+  -webkit-text-stroke: 1px rgb(255,255,255,0.5) ;
+ } 
+ .menuul li a::before {
+  content: attr(data-text);
+  position: absolute;
+  color: var(--clr);
+  width: 0;
+  overflow: hidden;
+  transition: 1s;
+  border-right: 8px solid var(--clr);
+  -webkit-text-stroke: 1px var(--clr);
+   
+  }
+.menuul li a:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
+   }   
+
+ /*fin MENU */
+
+
+/*-------------------------------------*/
+.ere {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.z {
+  max-width: 60%;
+ 
+}
+
+ /* empieza el footer  */
+ footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+/* Estilos para los enlaces */
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+/* Estilos para los íconos de redes sociales */
+footer .social-icons {
+  margin-top: 20px;
+}
+footer .social-icons a {
+  font-size: 24px;
+  margin: 0 10px;
+}
+/* fin del footer */
